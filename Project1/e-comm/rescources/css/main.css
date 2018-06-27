@@ -1,0 +1,172 @@
+/*
+Main Colours:
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple
+*/
+
+/*-----------------------------------mobile styles-----------------------------------*/
+
+
+/* apply a natrual box model layout to all elements */
+
+* { box-sizing: border-box;
+           }
+
+/* all imgs and videos will be 100% of their parent */
+
+img, video {
+
+    width: 100%;
+}
+
+/*Global styles*/
+
+/* ---main body content ------ */
+
+
+body {
+font-family: sans-serif, serif;
+font-size: 16px;
+color: rgb(20, 20, 20);
+margin:0;
+padding:0;
+}
+
+/* ---- The homepage img (first page)------- */
+
+#homebackgroundimg {
+position: relative;
+background:url(../img/trainerHomePage.jpg);
+background-position: center;
+background-repeat: no-repeat;
+width: 100%;
+height: auto;
+background-size: cover;
+height: 100vh;
+}
+
+
+.logo {
+    position: fixed;
+    width: 50px;
+    top: 4px;
+    z-index: 110;
+    left: 1vw;
+}
+
+#carticon {
+
+position:fixed;
+text-align: center;
+width: 100%;
+z-index: 110;
+top: 5px;
+
+}
+
+
+/*---------------------navigation section---------------------*/
+
+.fa-shopping-basket{
+    color: rgb(200, 177, 250);
+    font-size: 3em;
+
+}
+
+
+
+.navBtn {
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+    display: block;
+    float:right;
+    margin-right:15px;
+}
+
+
+#navc {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    background-color: rgb(53, 38, 80);
+    position: fixed;
+    z-index: 100;
+    border-bottom: 3px solid rgb(183, 154, 246);
+}
+
+
+nav li a, nav li {
+width: 100%;
+display: block;
+height: auto;
+text-decoration: none;
+outline-style: none;
+list-style-type: none;
+
+}
+
+.menuitems a{
+
+    color: rgb(247, 247, 247);
+    text-align: right;
+    padding: 15px 5vw 15px 0px;
+
+}
+.menuitems {
+   display: none;
+}
+
+/*Main page text and button */
+
+.slogan{
+
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 30vh;
+    left: 30vh;
+
+
+
+}
+
+
+.headingc, .buttonC {
+
+    width: 100%;
+    position: absolute;
+
+}
+
+
+.headingc{
+font-family:'Lovers Quarrel', cursive,sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: 2px;
+    top:80vh;
+}
+
+
+
+.buttonC{
+
+top: 90vh;
+
+}
+
+.newArrivalbutton {
+color: rgb(255, 255, 255);
+border-radius: 5px 5px;
+padding: 10px 15px;
+background-color: rgba(200, 177, 250,0.2);
+border: 1xp solid rgba(200, 177, 250);
+cursor: pointer;
+margin: 0 auto;
+display: block;
+
+
+}
+
+
