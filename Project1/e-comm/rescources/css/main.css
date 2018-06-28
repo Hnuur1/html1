@@ -1,172 +1,322 @@
-/*
-Main Colours:
-Primary colour - rgb(183, 154, 246); //purple for navigation links
-Secondary colour - rgb(53, 38, 80); //darker purple
-Third colour - rgb(200, 177, 250); //lighter purple
-*/
+    /*
+    Main Colours:
+    Primary colour - rgb(183, 154, 246); //purple for navigation links
+    Secondary colour - rgb(53, 38, 80); //darker purple
+    Third colour - rgb(200, 177, 250); //lighter purple
+    */
 
-/*-----------------------------------mobile styles-----------------------------------*/
-
-
-/* apply a natrual box model layout to all elements */
-
-* { box-sizing: border-box;
-           }
-
-/* all imgs and videos will be 100% of their parent */
-
-img, video {
-
-    width: 100%;
-}
-
-/*Global styles*/
-
-/* ---main body content ------ */
+    /*-----------------------------------mobile styles-----------------------------------*/
 
 
-body {
-font-family: sans-serif, serif;
-font-size: 16px;
-color: rgb(20, 20, 20);
-margin:0;
-padding:0;
-}
+    /* apply a natrual box model layout to all elements */
 
-/* ---- The homepage img (first page)------- */
+    * { box-sizing: border-box;
+               }
 
-#homebackgroundimg {
-position: relative;
-background:url(../img/trainerHomePage.jpg);
-background-position: center;
-background-repeat: no-repeat;
-width: 100%;
-height: auto;
-background-size: cover;
-height: 100vh;
-}
+    /* all imgs and videos will be 100% of their parent */
 
+    img, video {
 
-.logo {
-    position: fixed;
-    width: 50px;
-    top: 4px;
-    z-index: 110;
-    left: 1vw;
-}
+        width: 100%;
+    }
 
-#carticon {
+/*----embedded fonts-----*/
 
-position:fixed;
-text-align: center;
-width: 100%;
-z-index: 110;
-top: 5px;
+@font-face {
+
+  font-family:'28_days';
+  src: url(../../vendors/fonts/28DaysLater.ttf);
+  src: url(../../vendors/fonts/28_days_later.woff),
+      url(../../vendors/fonts/28_days_later.woff2),
+      url(../../vendors/fonts/28_days_later.eot);
+  font-weight: normal;
+  font-style: normal;
 
 }
 
-
-/*---------------------navigation section---------------------*/
-
-.fa-shopping-basket{
-    color: rgb(200, 177, 250);
-    font-size: 3em;
-
 }
+    /*Global styles*/
 
 
-
-.navBtn {
-    font-size: 3em;
-    color: rgb(255, 255, 255);
-    display: block;
-    float:right;
-    margin-right:15px;
-}
+    /* ---main body content ------ */
 
 
-#navc {
-    color: rgb(255, 255, 255);
+    body {
+    font-family: sans-serif, serif;
+    font-size: 16px;
+    color: rgb(20, 20, 20);
+    margin:0;
+    padding:0;
+    }
+
+    /* ---- The homepage img (first page)------- */
+
+    #homebackgroundimg {
+    position: relative;
+    background:url(../img/trainerHomePage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
     height: auto;
-    background-color: rgb(53, 38, 80);
-    position: fixed;
-    z-index: 100;
-    border-bottom: 3px solid rgb(183, 154, 246);
-}
+    background-size: cover;
+    height: 100vh;
+        background-attachment: fixed;
+    }
 
 
-nav li a, nav li {
-width: 100%;
-display: block;
-height: auto;
-text-decoration: none;
-outline-style: none;
-list-style-type: none;
+    .logo a{
+        position: fixed;
+        width: 50px;
+        top: 4px;
+        z-index: 130;
+        left: 10px;
+        position:fixed;
+    }
 
-}
+    #carticon {
 
-.menuitems a{
+    position:fixed;
+    text-align: center;
+    width: 30%;
+    z-index: 110;
+    top: 5px;
+    left: 35%
+    }
 
-    color: rgb(247, 247, 247);
-    text-align: right;
-    padding: 15px 5vw 15px 0px;
 
-}
-.menuitems {
-   display: none;
-}
+    /*---------------------navigation section---------------------*/
 
-/*Main page text and button */
+    .fa-shopping-basket{
+        color: rgb(200, 177, 250);
+        font-size: 3em;
 
-.slogan{
+    }
 
+
+
+    .navBtn {
+        font-size: 3em;
+        color: rgb(255, 255, 255);
+        display: block;
+        float:right;
+        margin-right:15px;
+    }
+
+
+    #navc {
+        color: rgb(255, 255, 255);
+        width: 100%;
+        height: auto;
+        background-color: rgb(53, 38, 80);
+        position: fixed;
+        z-index: 100;
+        border-bottom: 3px solid rgb(183, 154, 246);
+    }
+
+
+    nav li a, nav li {
+    width: 100%;
+    display: block;
+    height: auto;
+    text-decoration: none;
+    outline-style: none;
+    list-style-type: none;
+
+    }
+
+    .menuitems a{
+
+        color: rgb(247, 247, 247);
+        text-align: right;
+        padding: 15px 5vw 15px 0px;
+
+    }
+    .menuitems {
+       display: none;
+    }
+
+    /*Main page text and button */
+
+    .slogan{
+
+        font-family: '28_days';
+        font-size: 2em;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        top: 30vh;
+        left: 30vh;
+
+    }
+
+
+    .headingc, .buttonC {
+
+        width: 100%;
+        position: absolute;
+
+    }
+
+
+    .headingc{
+    font-family:'Lovers Quarrel', cursive,sans-serif;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 2em;
+        letter-spacing: 2px;
+        top:85vh;
+    }
+
+
+
+    .buttonC{
+
+    top: 90vh;
+
+    }
+
+    .newArrivalbutton {
     color: rgb(255, 255, 255);
-    position: absolute;
-    top: 30vh;
-    left: 30vh;
-
+    border-radius: 5px 5px;
+    padding: 10px 15px;
+    background-color: rgba(53, 38, 80,0.2);
+    border: 1xp solid rgba(200, 177, 250);
+    cursor: pointer;
+    margin: 0 auto;
+    display: block;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 100;
+    text-shadow: 0xp 0xp 12px white;
 
 
 }
 
 
-.headingc, .buttonC {
+/* ------STYLING FOR OUR PRODUCTS PAGE -----*/
+
+
+h1  {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: lighter;
+ font-family: 'Mukta', sans-serif;
+
+}
+
+h2 {
+
+font-size: 1.2em;
+font-family: 'Mukta', sans-serif;
+font-weight: lighter;
+text-align: center;
+
+
+
+}
+
+.productC {
+
+    text-align: center;
+
+}
+
+.addtocart {
+    color: rgb(255, 255, 255);
+    border-radius: 5px 5px;
+    padding: 10px 15px;
+    background-color:rgb(53, 38, 80);
+    cursor: pointer;
+
+
+}
+
+.addtocart a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+
+.addtocart a:after {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f07a";
+    font-weight: 900;
+}
+
+.productC span{
+
+    display: block;
+    font-weight: bold;
+}
+
+/*-------------------------------------------------*/
+/*----------------media query----------------------*/
+
+/*--------------mobile 568px and above------------*/
+@media screen and (min-width: 568px) {
+
+
+/*----------only include what you are changing-----*/
+
+    .slogan{
+
+        top: 25vh;
+        left: 70vw;
+
+    }
+
+}
+
+/*--------------tablet 768px and above------------*/
+
+@media screen and (min-width: 768px) {
+
+
+    .slogan{
+        font-size: 3em;
+        top: 10vh;
+        left: 70vw;
+    }
+
+
+   .headingc{
+    font-size: 2em;
+    top: 30vh;
+    width: auto;
+    left:75vw;
+    }
+
+    .buttonC {
+      width:auto;
+        left:75vw;
+        top:35vh;
+}
+
+ #homebackgroundimg {
 
     width: 100%;
-    position: absolute;
-
+    height: auto;
+    background-size: cover;
+    height: 75vh;
+    background-attachment: fixed;
+    }
+    .productC {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  height: 100%;
+}
 }
 
 
-.headingc{
-font-family:'Lovers Quarrel', cursive,sans-serif;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 2em;
-    letter-spacing: 2px;
-    top:80vh;
-}
 
 
 
-.buttonC{
-
-top: 90vh;
-
-}
-
-.newArrivalbutton {
-color: rgb(255, 255, 255);
-border-radius: 5px 5px;
-padding: 10px 15px;
-background-color: rgba(200, 177, 250,0.2);
-border: 1xp solid rgba(200, 177, 250);
-cursor: pointer;
-margin: 0 auto;
-display: block;
 
 
-}
+
+
+
+
 
 
